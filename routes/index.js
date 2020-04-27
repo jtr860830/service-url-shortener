@@ -1,13 +1,15 @@
-const Router = require("koa-router");
-const Bodyparser = require("koa-bodyparser");
+const Router = require("@koa/router");
+const CORS = require("@koa/cors");
 const Logger = require("koa-logger");
+const Bodyparser = require("koa-bodyparser");
 
 const models = require("../models");
 
 const router = new Router();
 
-router.use(Bodyparser());
+router.use(CORS());
 router.use(Logger());
+router.use(Bodyparser());
 
 router.post("/short", async (ctx) => {
 	try {

@@ -9,10 +9,11 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "@koa/router": "^8.0.8",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.3.0",
     "koa-logger": "^3.2.1",
-    "koa-router": "^8.0.8",
     "mongoose": "^5.9.7",
     "shortid": "^2.2.15"
   }
