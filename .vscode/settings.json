@@ -1,0 +1,16 @@
+{
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/__pypackages__/3.10/lib"
+  ],
+  "python.autoComplete.extraPaths": [
+    "${workspaceFolder}/__pypackages__/3.10/lib"
+  ],
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.linting.flake8Path": "${workspaceFolder}/__pypackages__/3.10/bin/flake8",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "${workspaceFolder}/__pypackages__/3.10/bin/black",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+}
