@@ -15,3 +15,7 @@ install:
 .PHONY: init
 init: install
 	$(PDM) run alembic upgrade head
+
+.PHONY: test
+test: install
+	$(PDM) run pytest -vs
